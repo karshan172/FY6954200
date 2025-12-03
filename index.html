@@ -60,14 +60,10 @@
    <td><a href="#Abstract">Abstract</td>
 </tr>
 <tr>
-   <td><a href="#Definition">Definition</td>
+   <td><a href="#Introduction">Introduction</td>
 </tr>
 <tr>
   <td><a href="#Analysis and discussion">Analysis and discussion</td>
-</tr>
-
-<tr>
-  <td><a href="#Quadratic Formula">Quadratic Formula</td>
 </tr>
 
 <tr>
@@ -76,78 +72,87 @@
   </table>
 
 <h3 id="Abstract">Abstract</h3>
-<p class="ex1">
-<pre>
-    Quantum computing has been gaining a lot of attention lately because researchers believe it could solve specific problems much faster than classical computers. 
-  Instead of using standard bits, quantum computers use qubits, which follow the rules of quantum mechanics.
-  This paper gives an overview of the basic ideas behind quantum computing—such as superposition and entanglement—and looks at a few major algorithms that have been proposed. 
-  It also discusses some of the challenges the field faces right now, especially since most current devices are still noisy and limited. 
-  Finally, a few potential applications in fields like cybersecurity, space exploration, and healthcare are explored. 
-  Even though we are still far from having fully practical quantum computers, the progress being made suggests they could become very important in the future.
+    Quantum computing has been gaining a lot of attention lately because researchers believe it could solve certain problems much faster than classical computers. Instead of using standard bits, quantum computers use qubits, which follow the rules of quantum mechanics). This paper gives an overview of the basic ideas behind quantum computing—such as superposition and entanglement—and looks at a few major algorithms that have been proposed. It also discusses some of the challenges the field faces right now, especially since most current devices are still noisy and limited. Finally, a few potential applications in fields like cybersecurity, space exploration, and healthcare are explored. Even though we are still far from having fully practical quantum computers, the progress being made suggests they could become very important in the future.
 </pre>
 </p>
 
-<h3 id="Definition">Definition</h3>
-<p class="ex1">
-<pre>
+<h3 id="Introduction">Introduction</h3>
     Although classical computers have improved massively over the years, they still run into problems when dealing with extremely complex tasks. Simulating molecules or optimising high-dimensional systems can take far too long on classical machines. This is partly because classical bits must be either 0 or 1, which limits how much information can be represented at once.
-Quantum computing processes information differently by using qubits, which can exist in multiple states simultaneously (Nielsen & Chuang). Because of properties such as superposition and entanglement, qubits can represent and process information in richer ways than classical bits.
-We are currently in the Noisy Intermediate-Scale Quantum (NISQ) era, where quantum computers exist but are still highly sensitive to noise (Nielsen & Chuang). Even though NISQ devices cannot yet solve significant real-world problems, they allow researchers to test early quantum algorithms and explore practical quantum machine learning ideas (Biamonte et al., 2017).
-In this paper, I explain the main principles behind quantum computing, review several well-known quantum algorithms, and discuss the challenges that remain. I also describe some possible applications where quantum computing might make a big difference in the future.
+Quantum computing approaches information differently by using qubits, which can exist in multiple states at the same time. Because of properties such as superposition and entanglement, qubits can represent and process information in richer ways than classical bits.
+We are currently in the Noisy Intermediate-Scale Quantum (NISQ) era, where quantum computers exist but are still highly sensitive to noise. Even though NISQ devices cannot yet solve large real-world problems, they allow researchers to test early quantum algorithms and explore practical quantum machine learning ideas.
+In this paper, I explain the main principles behind quantum computing, review several well-known quantum algorithms, and discuss the challenges that still remain. I also describe some possible applications where quantum computing might make a big difference in the future.
 
 </pre>
 </p>
-
-
-  
-  <title>MathML Example</title>
-       
-       <h3 id="Quadratic Formula">Quadratic Formula</h3>
-       <p>The quadratic formula is given by:.</p>
-
-       <!--MathML representations of the quadratic formula-->
-       <math xmlns="http://www.w3.org/1998/Math/MathML">
-       <mrow>
-       <msup><mi>x</mi><mn>2</mn></msup>
-             <mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi>
-             <mo>+</mo><mi>4</mi>
-    <mo>=</mo>
-    <mi>0</mi>
-       </mrow>
-       </math>
-
 
 
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
-Table 1: Data on cost and lifespan of bridge repairs
-<table>
-<tr>
-  <th>£ Cost of repairs</th>
-  <th>Lifespan of repairs (years)</th>
-</tr>
-<tr>
-  <td>0.7 m</td>
-  <td>2</td>
-</tr>
-<tr>
-  <td>3.3 m</td>
-  <td>4</td>
-</tr>
-<tr>
-  <td>2.6 m</td>
-  <td>5</td>
-</tr>
-<tr>
-  <td>17.4 m</td>
-  <td>7</td>
-</tr>
-<tr>
-  <td>8.8 m</td>
-  <td>9</td>
-</tr>
-</table>
-
+<p>
+<h4> Principles of Quantum Computing:</h4>
+</p>
+<p>
+<p>2.1 Superposition</p>
+Superposition is one of the central ideas in quantum computing. A qubit can be in a combination of states, written as:
+</p>
+<p>
+∣ψ⟩=α∣0⟩+β∣1⟩,
+</p>
+where the amplitudes determine the measurement probabilities (Nielsen & Chuang). This ability to exist in multiple states at once is a major reason why quantum computers might eventually outperform classical ones.
+<p>
+<p>2.2 Entanglement</p>
+Entanglement is another key concept in quantum mechanics. When two qubits become entangled, the state of one qubit depends on the state of the other, even when they are far apart (Nielsen & Chuang). Entanglement is essential for many quantum algorithms and is also widely used in quantum machine learning approaches (Biamonte et al., 2017).
+</p>
+<p>
+<p>2.3 Quantum Logic Gates</p>
+Quantum gates manipulate qubits in specific ways. The Pauli X, Y, and Z gates, as well as the Hadamard gate, are used to rotate or flip a qubit’s state. The CNOT gate creates entanglement between qubits and is a fundamental building block for quantum circuits (Nielsen & Chuang). These gates allow quantum algorithms to be built similarly to how classical logic gates form classical circuits, but with quantum mechanical behaviour.
+</p> 
+<p>
+<h4> 3. Quantum Algorithms:</h4>
+</p>
+<p>
+<p>3.1 Quantum Support Vector Machines (QSVMs)</p>
+Quantum Support Vector Machines take advantage of quantum kernels to process data in very high-dimensional spaces (Schuld & Petruccione). The idea is that quantum circuits can compute kernel functions faster or more efficiently than classical SVMs. This concept is often discussed in quantum machine learning literature, especially in work highlighting early quantum advantages (Biamonte et al., 2017).
+</p>
+<p>
+<p>3.2 Variational Quantum Algorithms (VQAs)</p>
+Variational Quantum Algorithms are hybrid methods combining quantum circuits with classical optimisation. Parameterised quantum circuits (also called PQCs) are adjusted by a classical optimiser to minimise a cost function (Benedetti et al., 2019). Well-known examples include the Variational Quantum Eigensolver (VQE) and the Quantum Approximate Optimisation Algorithm (QAOA), both used extensively on NISQ devices (Biamonte et al., 2017).
+</p>
+<p>
+<p>3.3 Quantum Reinforcement Learning (QRL)</p>
+Quantum reinforcement learning expands classical reinforcement learning by using quantum effects like superposition for faster exploration. While still mostly theoretical, QRL is discussed within broader quantum machine learning frameworks (Biamonte et al., 2017).
+</p>
+<p>
+<h4> 4. Challenges in Quantum Computing: </h4>
+</p>
+<p>
+Quantum computing faces a number of serious challenges:
+	<ul>
+   <li> Noise and decoherence: Qubits lose information extremely easily due to environmental interactions (Nielsen & Chuang).</li>
+	<li> Error correction: Quantum error correction requires many physical qubits for one logical qubit, making it difficult with today’s hardware (Nielsen & Chuang).</li>
+	<li> Training PQCs: Variational circuits can suffer from barren plateaus and noise-related training difficulties (Benedetti et al., 2019).
+	Algorithmic limits: Not all quantum algorithms outperform classical ones yet, especially on NISQ devices (Biamonte et al., 2017).</li>
+<p>These issues make it difficult to build large-scale quantum systems.</p>
+<p> 
+<h4> 5. Applications of Quantum Computing: </h4>
+</p>
+<p>
+<p>5.1 Space Exploration</p>
+Quantum computing may eventually help optimise spacecraft trajectories, analyse astronomical data, and design materials for extreme environments. Some of these ideas follow from the broader potential of quantum machine learning and quantum optimisation (Biamonte et al., 2017).
+</p>
+<p>
+<p>5.2 Cybersecurity and Pattern Recognition</p> Quantum machine learning models could help detect threats or unusual patterns much faster, building on ideas from QSVMs and quantum kernels (Schuld & Petruccione). At the same time, advances in quantum computing also motivate quantum-safe encryption.
+</p>
+<p>
+<p>5.3 Healthcare and Drug Discovery</p>
+Quantum computers could simulate molecules more accurately, speeding up drug discovery. Variational algorithms like VQE have already been proposed for simulating molecular energy levels (Benedetti et al., 2019), and supervised quantum learning methods may assist with pattern recognition in medical data (Schuld & Petruccione).
+</p>
+<p>
+<h4> Conclusion </h4>
+</p>
+<p>
+Quantum computing is still in its early stages, but it has the potential to transform several fields. Properties like superposition and entanglement give quantum computers abilities that classical computers do not have (Nielsen & Chuang). This paper reviewed some of the main principles, algorithms, challenges, and applications. Although NISQ-era devices are limited, ongoing progress in quantum machine learning (Biamonte et al., 2017; Schuld & Petruccione) and parameterised quantum circuits (Benedetti et al., 2019) suggests that quantum computing could become a major technology in the future.
+</p>
 
 <h3 id="References"> References</h3>
 
