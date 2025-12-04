@@ -76,6 +76,7 @@
 </p>
 
 <h3 id="Introduction">Introduction</h3>
+<pre id="Intr_Counter">
     Although classical computers have improved massively over the years, they still run into problems when dealing with extremely complex tasks. Simulating molecules or optimising high-dimensional systems can take far too long on classical machines. This is partly because classical bits must be either 0 or 1, which limits how much information can be represented at once.
 Quantum computing approaches information differently by using qubits, which can exist in multiple states at the same time. Because of properties such as superposition and entanglement, qubits can represent and process information in richer ways than classical bits.
 We are currently in the Noisy Intermediate-Scale Quantum (NISQ) era, where quantum computers exist but are still highly sensitive to noise. Even though NISQ devices cannot yet solve large real-world problems, they allow researchers to test early quantum algorithms and explore practical quantum machine learning ideas.
@@ -87,6 +88,7 @@ In this paper, I explain the main principles behind quantum computing, review se
 
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
+<pre id="Analysis_Counter">
 <p>
 <h4> Principles of Quantum Computing:</h4>
 </p>
@@ -249,10 +251,10 @@ Science and Technology*</a></p>
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("Intr_Counter");
+    const AnalysisCount = displayWordCount("Analysis_Counter");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = Intr_Counter+ Analysis_Counter;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
