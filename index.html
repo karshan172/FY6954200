@@ -76,7 +76,7 @@
 </p>
 
 <h3 id="Introduction">Introduction</h3>
-<pre id="Intr_Counter">
+<p id="Intr_Counter">
     Although classical computers have improved massively over the years, they still run into problems when dealing with extremely complex tasks. Simulating molecules or optimising high-dimensional systems can take far too long on classical machines. This is partly because classical bits must be either 0 or 1, which limits how much information can be represented at once.
 Quantum computing approaches information differently by using qubits, which can exist in multiple states at the same time. Because of properties such as superposition and entanglement, qubits can represent and process information in richer ways than classical bits.
 We are currently in the Noisy Intermediate-Scale Quantum (NISQ) era, where quantum computers exist but are still highly sensitive to noise. Even though NISQ devices cannot yet solve large real-world problems, they allow researchers to test early quantum algorithms and explore practical quantum machine learning ideas.
@@ -88,44 +88,58 @@ In this paper, I explain the main principles behind quantum computing, review se
 
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
-<pre id="Analysis_Counter">
+<div id="Analysis_Counter">
+
 <p>
 <h4> Principles of Quantum Computing:</h4>
 </p>
+
 <p>
 <p>2.1 Superposition</p>
 Superposition is one of the central ideas in quantum computing. A qubit can be in a combination of states, written as:
 </p>
+
+<a href=[LINK TO GO TO]>[TEXT TO SHOW]</a>
+
+
 <p>
 ∣ψ⟩=α∣0⟩+β∣1⟩,
 </p>
-where the amplitudes determine the measurement probabilities (Nielsen & Chuang). This ability to exist in multiple states at once is a major reason why quantum computers might eventually outperform classical ones.
+where the amplitudes determine the measurement probabilities [(Nielsen & Chuang). This ability to exist in multiple states at once is a major reason why quantum computers might eventually outperform classical ones.See fig 1 for a representation of a single qubit 
+<p><img src="qubit.png"></p>
 <p>
 <p>2.2 Entanglement</p>
 Entanglement is another key concept in quantum mechanics. When two qubits become entangled, the state of one qubit depends on the state of the other, even when they are far apart (Nielsen & Chuang). Entanglement is essential for many quantum algorithms and is also widely used in quantum machine learning approaches (Biamonte et al., 2017).
 </p>
+
 <p>
 <p>2.3 Quantum Logic Gates</p>
 Quantum gates manipulate qubits in specific ways. The Pauli X, Y, and Z gates, as well as the Hadamard gate, are used to rotate or flip a qubit’s state. The CNOT gate creates entanglement between qubits and is a fundamental building block for quantum circuits (Nielsen & Chuang). These gates allow quantum algorithms to be built similarly to how classical logic gates form classical circuits, but with quantum mechanical behaviour.
 </p> 
+
 <p>
 <h4> 3. Quantum Algorithms:</h4>
 </p>
+
 <p>
 <p>3.1 Quantum Support Vector Machines (QSVMs)</p>
 Quantum Support Vector Machines leverage quantum kernels to process data in very high-dimensional spaces (Schuld & Petruccione). The idea is that quantum circuits can compute kernel functions faster or more efficiently than classical SVMs. This concept is often discussed in quantum machine learning literature, especially in work highlighting early quantum advantages (Biamonte et al., 2017).
 </p>
+
 <p>
 <p>3.2 Variational Quantum Algorithms (VQAs)</p>
 Variational Quantum Algorithms are hybrid methods combining quantum circuits with classical optimisation. Parameterised quantum circuits (also called PQCs) are adjusted by a classical optimiser to minimise a cost function (Benedetti et al., 2019). Well-known examples include the Variational Quantum Eigensolver (VQE) and the Quantum Approximate Optimisation Algorithm (QAOA), both used extensively on NISQ devices (Biamonte et al., 2017).
 </p>
+
 <p>
 <p>3.3 Quantum Reinforcement Learning (QRL)</p>
 Quantum reinforcement learning extends classical reinforcement learning by leveraging quantum effects, such as superposition, to accelerate exploration. While still mostly theoretical, QRL is discussed within broader quantum machine learning frameworks (Biamonte et al., 2017).
 </p>
+
 <p>
 <h4> 4. Challenges in Quantum Computing: </h4>
 </p>
+
 <p>
 Quantum computing faces a number of serious challenges:
 	<ul>
@@ -135,42 +149,51 @@ Quantum computing faces a number of serious challenges:
 	Algorithmic limits: Not all quantum algorithms outperform classical ones yet, especially on NISQ devices (Biamonte et al., 2017).</li>
 	</ul>
 <p>These issues make it difficult to build large-scale quantum systems.</p>
+</p>
+
 <p> 
 <h4> 5. Applications of Quantum Computing: </h4>
 </p>
+
 <p>
 <p>5.1 Space Exploration</p>
 Quantum computing may eventually help optimise spacecraft trajectories, analyse astronomical data, and design materials for extreme environments. Some of these ideas follow from the broader potential of quantum machine learning and quantum optimisation (Biamonte et al., 2017).
 </p>
+
 <p>
 <p>5.2 Cybersecurity and Pattern Recognition</p> Quantum machine learning models could help detect threats or unusual patterns much faster, building on ideas from QSVMs and quantum kernels (Schuld & Petruccione). At the same time, advances in quantum computing also motivate quantum-safe encryption.
 </p>
+
 <p>
 <p>5.3 Healthcare and Drug Discovery</p>
 Quantum computers could simulate molecules more accurately, speeding up drug discovery. Variational algorithms like VQE have already been proposed for simulating molecular energy levels (Benedetti et al., 2019), and supervised quantum learning methods may assist with pattern recognition in medical data (Schuld & Petruccione).
 </p>
+
 <p>
 <h4> Conclusion </h4>
 </p>
+
 <p>
 Quantum computing is still in its early stages, but it has the potential to transform several fields. Properties like superposition and entanglement give quantum computers abilities that classical computers do not have. This paper reviewed some of the main principles, algorithms, challenges, and applications. Although NISQ-era devices are limited, ongoing progress in quantum machine learning and parameterised quantum circuits suggests that quantum computing could become a major technology in the future.
 </p>
 
+</div>
+
 <h3 id="References"> References</h3>
 <p>
 <pre>
-<p>
-<a href=”https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf”>1.Nielsen, M. A., & Chuang, I. L. *Quantum
+<p id="Nielsen & Chuang">
+<a href="https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf">1.Nielsen, M. A., & Chuang, I. L. *Quantum
 Computation and Quantum Information*
 Cambridge University Press</a></p>
-<p><a href=”https://arxiv.org/pdf/1611.09347”>2. Biamonte, J., Wittek, P., Pancotti, N.,
+<p><a href="https://arxiv.org/pdf/1611.09347">2. Biamonte, J., Wittek, P., Pancotti, N.,
 Rebentrost, P., Wiebe, N., & Lloyd, S.
 (2017). Quantum Machine Learning.
 *Nature*, 549(7671), 195-202</a></p>
-<p><a href=”https://content.e-bookshelf.de/media/reading/L-11644013-e91e0187b8.pdf”>3. Schuld, M., & Petruccione, F.
+<p><a href="https://content.e-bookshelf.de/media/reading/L-11644013-e91e0187b8.pdf">3. Schuld, M., & Petruccione, F.
 *Supervised Learning with Quantum
 Computers*. Springer</a></p>
-<p><a href=”https://arxiv.org/pdf/1906.07682”>4. Benedetti, M., Lloyd, E., & Lubasch, М.
+<p><a href="https://arxiv.org/pdf/1906.07682">4. Benedetti, M., Lloyd, E., & Lubasch, М.
 (2019). Parameterized Quantum Circuits
 as Machine Learning Models. *Quantum
 Science and Technology*</a></p>
@@ -254,7 +277,7 @@ Science and Technology*</a></p>
     const IntroductionCount = displayWordCount("Intr_Counter");
     const AnalysisCount = displayWordCount("Analysis_Counter");
     // Calculate the sum of all selected sections
-    const totalWordCount = Intr_Counter+ Analysis_Counter;
+    const totalWordCount = IntroductionCount+ AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
